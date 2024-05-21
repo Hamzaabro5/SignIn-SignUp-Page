@@ -14,6 +14,6 @@ form.addEventListener(`submit` , function(event){
     console.log(`Password:` , password.value);
     // console.log(`Hello`, firstname.value , lastname.value);
 
-    h1.innerHTML = `Welcome To Our Website  ${firstname.value + lastname.value}`
+    h1.innerHTML = `Welcome To Our Website  ${firstname.value + lastname.value}!`
 
 })

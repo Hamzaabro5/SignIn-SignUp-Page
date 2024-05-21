@@ -8,6 +8,6 @@ form.addEventListener(`submit` , function(event) {
     event.preventDefault();
     console.log(`Username:` , username.value);
     console.log(`Password` , password.value);
-
-    h1.innerHTML = `Welcome Back ${username.value}`
+    
+    h1.innerHTML = `Welcome Back ${username.value}!`
 })

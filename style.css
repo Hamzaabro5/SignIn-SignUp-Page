@@ -9,6 +9,8 @@
     background-color: #1a1a1a;
     color: #fff;
     border: 1px solid #333;
+    top: 50px;
+    left: 550px;
   }
   
   .title {
@@ -65,7 +67,7 @@
   .flex {
     display: flex;
     width: 100%;
-    gap: 6px;
+    gap: 36px;
   }
   
   .form label {
@@ -100,13 +102,13 @@
   .form label .input:focus + span,
   .form label .input:valid + span {
     color: #00bfff;
-    top: 0px;
-    font-size: 0.7em;
+    top: 5px;
+    font-size: 0.8em;
     font-weight: 600;
   }
   
   .input {
-    font-size: medium;
+    font-size: small;
   }
   
   .submit {

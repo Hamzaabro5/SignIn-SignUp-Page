@@ -126,7 +126,17 @@
     background-color: #00bfff96;
     cursor: pointer;
   }
+
   
+
+  h1{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 34px;
+  }
+
+
+
   @keyframes pulse {
     from {
       transform: scale(0.9);

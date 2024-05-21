@@ -1,3 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(./brandi-redd-aJTiW00qqtI-unsplash.jpg);
+}
 .form {
     display: flex;
     flex-direction: column;
@@ -10,7 +18,7 @@
     color: #fff;
     border: 1px solid #333;
     top: 50px;
-    left: 550px;
+    left: 600px;
   }
   
   .title {
@@ -67,7 +75,7 @@
   .flex {
     display: flex;
     width: 100%;
-    gap: 36px;
+    gap: 8px;
   }
   
   .form label {

@@ -1,4 +1,4 @@
-import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
+import {createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 import { auth } from "./config.js";
 
 const form = document.querySelector(`form`)
@@ -9,20 +9,20 @@ const password = document.querySelector(`.password`)
 form.addEventListener(`submit` , (event)=>{
     event.preventDefault()
 
-    signInWithEmailAndPassword(auth, email.value, password.value)
+    createUserWithEmailAndPassword(auth, email.value, password.value)
     .then((userCredential) => {
-      const user = userCredential.user;
-      console.log(user);
+     const user = userCredential.user;
+     console.log(user);
+     
+     email.value = ``
+     password.value = ``
+     window.location = `./login.html`
+   })
+   .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorMessage);
+   });
 
-      email.value = ``
-      password.value = ``
-      window.location = `https://hamzaabro.netlify.app/`
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorMessage);
-    });
-  
 
 })
